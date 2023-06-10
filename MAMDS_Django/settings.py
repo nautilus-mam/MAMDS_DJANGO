@@ -81,14 +81,14 @@ WSGI_APPLICATION = 'MAMDS_Django.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.parse(os.environ.get('DATABASE'), conn_max_age=600),
+    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'), conn_max_age=600),
 }
 
 
 # Fake PyMySQL's version and install as MySQLdb
 # https://adamj.eu/tech/2020/02/04/how-to-use-pymysql-with-django/
-pymysql.install_as_MySQLdb()
-pymysql.version_info = (1, 4, 3, "final", 0)
+# pymysql.install_as_MySQLdb()
+# pymysql.version_info = (1, 4, 3, "final", 0)
 
 
 # Password validation
