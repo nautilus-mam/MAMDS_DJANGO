@@ -18,11 +18,11 @@ from django.template.defaultfilters import slugify
 # Create your models here.
 class BaseModel(models.Model):
     create_date = models.DateField(verbose_name="Data Criação", auto_now_add=True)
-    last_update = models.DateField(verbose_name="Última Atualiização", auto_now=True)
+    last_update = models.DateField(verbose_name="Última Atualização", auto_now=True)
     is_active = models.BooleanField(verbose_name="Ativo", default=True)
 
     class Meta:
-        abstract = True  # indic a abstract class, ie, it does not create in database
+        abstract = True  # indic an abstract class, ie, it does not create in database
 
 
 class OperationsType(BaseModel):
