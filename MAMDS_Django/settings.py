@@ -75,7 +75,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'MAMDS_Django.wsgi.application'
+WSGI_APPLICATION = 'MAMDS_Django.wsgi.application
 
 
 # Database
